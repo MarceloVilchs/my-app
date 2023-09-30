@@ -1,0 +1,5 @@
+
+
+<script>
+    'listaraticulo'
+</script>

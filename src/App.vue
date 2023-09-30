@@ -36,6 +36,12 @@
   </v-card>
 </template>
 
+<body>
+
+  <h1> lorem <h1>
+
+</body>
+
 <script>
   export default {
     data () {

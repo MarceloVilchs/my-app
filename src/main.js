@@ -3,10 +3,12 @@ import App from './App.vue'
 import vuetify from './plugins/vuetify'
 
 //importamos nuestros componentes
-import InicioComponent from './components/Inicio';
+import inicioComponent from './components/Inicio';
+
 
 //creamos nuestros componentes
-Vue.component('inicioComponent', InicioComponent)
+Vue.component('inicioComponent', inicioComponent)
+
 
 Vue.config.productionTip = false
 

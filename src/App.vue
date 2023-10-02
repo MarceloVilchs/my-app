@@ -1,51 +1,87 @@
 <template>
   <v-card
-    class="pa-12"
-    color="indigo darken-2"
-    flat
+    class="mx-auto overflow-hidden"
+    height="750"
+    width="2100"
   >
-    <v-card
-      elevation="12"
-      width="256"
-    >
-      <v-navigation-drawer
-        floating
-        permanent
-      >
-        <v-list
-          dense
-          rounded
-        >
-          <v-list-item
-            v-for="item in items"
-            :key="item.title"
-            link
-          >
-            <v-list-item-icon>
-              <v-icon>{{ item.icon }}</v-icon>
-            </v-list-item-icon>
+    <v-system-bar color="cyan"></v-system-bar>
 
-            <v-list-item-content>
-              <v-list-item-title>{{ item.title }}</v-list-item-title>
-            </v-list-item-content>
+    <v-app-bar
+      color="cyan"
+      white
+    >
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+
+      <v-toolbar-title class="text-center">Articulos Upgrade</v-toolbar-title>
+
+      <v-spacer></v-spacer>
+
+
+      
+
+      <v-btn icon>
+        <v-icon>mdi-magnify</v-icon>
+      </v-btn>
+
+      <v-btn icon>
+        <v-icon>mdi-filter</v-icon>
+      </v-btn>
+
+      <v-btn icon>
+        <v-icon>mdi-dots-vertical</v-icon>
+      </v-btn>
+    </v-app-bar>
+
+    <v-navigation-drawer
+      v-model="drawer"
+      absolute
+      bottom
+      temporary
+      app clipped
+    >
+      <v-list
+        nav
+        dense
+      >
+        <v-list-item-group
+          v-model="group"
+          active-class="deep-purple--text text--accent-4"
+        >
+          <v-list-item :to="{path:'/inicio'}">
+            <v-list-item-title>Inicio</v-list-item-title>
           </v-list-item>
-        </v-list>
-      </v-navigation-drawer>
-      <inicioComponent></inicioComponent>
-    </v-card>
+
+          <v-list-item :to="{path:'/articulos'}">
+            <v-list-item-title>Articulos</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item :to="{path:'/contacto'}">
+            <v-list-item-title>Contacto</v-list-item-title>
+          </v-list-item>
+
+        </v-list-item-group>
+      </v-list>
+    </v-navigation-drawer>
+
+    <v-card-text>
+      Prueba de pagina u aplicacion web en curso por marcelo vilches :)
+    </v-card-text>
   </v-card>
 </template>
 
-
 <script>
   export default {
-    data () {
-      return {
-        items: [
-          { title: 'Home', icon: 'mdi-view-dashboard' },
-          { title: 'About', icon: 'mdi-forum' },
-        ],
-      }
+    data: () => ({
+      drawer: false,
+      group: null,
+    }),
+
+    watch: {
+      group () {
+        this.drawer = false
+      },
     },
   }
 </script>
+
+

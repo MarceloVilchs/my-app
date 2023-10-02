@@ -27,5 +27,7 @@
 </template>
 
 <script>
-   'inicioComponent'
+export default{
+  name:'inicioComponent'
+}
 </script>

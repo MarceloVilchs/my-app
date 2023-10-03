@@ -1,21 +1,24 @@
 <template>
-    <v-container>
-      <v-row class="text-center">
-        <v-col class="mb-4">
-            <v-h1 class="display-2 font-weight-bold mb-3">
-              Contacto
-            </v-h1>
-        </v-col>
-      </v-row>
+  <v-container>
+    <v-row class="text-center">
+      <v-col class="mb-4 text-center" style="align-self: flex-start;">
+        <v-h1 class="headline" style="font-size: 36px;">
+          Contacto
+        </v-h1>
+      </v-col>
+    </v-row>
 
-      <v-row class="text-center">
-        <v-col class="mb-4">
-          <v-btn href="https://www.instagram.com/marcelo.vilchs/" target="_blank" class="mx-10" fab dark large color="pink accent-3"></v-btn>
-            <v-icon dark>mdi-instagram</v-icon>
-        </v-col>
-      </v-row>
-    </v-container>
+    <v-row class="text-center">
+      <v-col class="mb-4">
+        <v-btn href="https://www.instagram.com/marcelo.vilchs/" target="_blank" class="mx-10" fab >
+          <v-icon>mdi-instagram</v-icon>
+        </v-btn>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
+
+
 
 <script>
 export default{

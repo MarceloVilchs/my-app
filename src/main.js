@@ -2,6 +2,7 @@ import Vue from 'vue';
 import App from './App.vue';
 import vuetify from './plugins/vuetify';
 
+
 //importamos VueRouter
 import VueRouter from 'vue-router';
 
@@ -12,6 +13,8 @@ import crearArticulo from './components/CrearArticulo';
 import editarArticulo from './components/EditarArticulo';
 import contactoContacto from './components/Contacto';
 
+
+console.log(inicioComponent);
 
 
 //creamos nuestros componentes
@@ -32,13 +35,13 @@ const routes = [
   {path:'/articulos', component:listarArticulos},
   {path:'/crear', component:crearArticulo, name:'CrearArticulo'},
   {path:'/editar/:id', component:editarArticulo, name:'EditarArticulo'},
-  {path:'/contacto', component:contactoContacto}
+  {path:'/contacto', component:contactoContacto},
 ];
 
 //crear objeto router 
 const router = new VueRouter({
   routes,
-  mode:'history'
+  
 });
 
 Vue.config.productionTip = false

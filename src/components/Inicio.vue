@@ -6,7 +6,7 @@
             </v-col>
 
             <v-col cols="12">
-                <v-img lazy-src="https://picsum.photos/id/11/10/6" max-height="300" max-width="500" src="https://picsum.photos/id/11/500/300"></v-img>
+                <v-img lazy-src="https://i.pinimg.com/originals/5f/62/d4/5f62d4769b20f1a16cbb709b2b4538ea.png" max-height="300" max-width="500" src="https://i.pinimg.com/originals/5f/62/d4/5f62d4769b20f1a16cbb709b2b4538ea.png"></v-img>
             </v-col>
             
         </v-row>
@@ -15,9 +15,10 @@
       <v-col cols="11">
         <!-- Contenedor de las palabras -->
         <div class="text-right">
-          <h1 class="display-5 font-weight-bold mb-3">objeto</h1>
-          <h1 class="display-5 font-weight-bold mb-3">natural</h1>
-          <h1 class="display-5 font-weight-bold mb-3">radiacion</h1>
+          <h1 class="display-5 font-weight-bold mb-3">Objetivo:</h1>
+        <div>
+          <h1 class="display-4 my-custom-text-size">Comprender porque mi polola no sigue viendo one piece y no me ama</h1>
+        </div>  
         </div>
       </v-col>
       <v-col cols="11">
@@ -25,6 +26,12 @@
         </v-row>
     </v-container>
 </template>
+
+<style>
+.my-custom-text-size {
+  font-size: 18px; /* Cambia el tamaño de fuente aquí según tus necesidades */
+}
+</style>
 
 <script>
 export default{

@@ -2,7 +2,7 @@
     <v-container>
         <v-row class = "text-center">
             <v-col class="mb-4">
-                <h1 class="display-2 font-weight-bold mb-3">Espacio Seguro</h1>
+                <h1 class="display-2 font-weight-bold mb-3">Compra y almacenamiento</h1>
             </v-col>
 
             <v-col cols="12">
@@ -17,7 +17,7 @@
         <div class="text-right">
           <h1 class="display-5 font-weight-bold mb-3">Objetivo:</h1>
         <div>
-          <h1 class="display-4 my-custom-text-size">Comprender porque mi polola no sigue viendo one piece y no me ama</h1>
+          <h1 class="display-4 my-custom-text-size">Servicios, archivar en base de datos o lo que sea xD</h1>
         </div>  
         </div>
       </v-col>

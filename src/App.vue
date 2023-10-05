@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div id="app" data-app>
     <v-card
       class="mx-auto overflow-hidden"
       height="600"
-      width="300"
+      width="800"
       
     >
       <v-system-bar color="cyan"></v-system-bar>
@@ -13,12 +13,12 @@
       >
         <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 
-        <v-toolbar-title class="text-center">Articulos</v-toolbar-title>
+        <v-toolbar-title class="text-center"></v-toolbar-title>
 
         <v-spacer></v-spacer>
 
-        <v-btn icon>
-          <v-icon>mdi-magnify</v-icon>
+        <v-btn href="https://www.youtube.com" target="_blank" class="mx-10" fab icon>
+          <v-icon style="color: rgb(231, 43, 43);">mdi-youtube</v-icon>
         </v-btn>
 
         <v-btn icon >

@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import App from './App.vue';
 import vuetify from './plugins/vuetify';
-
+import 'vuetify/dist/vuetify.min.css'
 
 //importamos VueRouter
 import VueRouter from 'vue-router';
@@ -33,15 +33,15 @@ const routes = [
   {path:'/', component:inicioComponent},
   {path:'/inicio', component:inicioComponent},
   {path:'/articulos', component:listarArticulos},
-  {path:'/crear', component:crearArticulo, name:'CrearArticulo'},
-  {path:'/editar/:id', component:editarArticulo, name:'EditarArticulo'},
+  {path:'/crear', component:crearArticulo, name:'crearArticulo'},
+  {path:'/editar/:id', component:editarArticulo, name:'editarArticulo'},
   {path:'/contacto', component:contactoContacto},
 ];
 
 //crear objeto router 
 const router = new VueRouter({
   routes,
-  
+  mode:'history'
 });
 
 Vue.config.productionTip = false
